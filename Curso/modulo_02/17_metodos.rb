@@ -9,7 +9,15 @@ class Pessoa
   end
 end
 
+class Pessoal
+  def self.gritar(texto) #método de classe, NÃO precisa instanciar
+    "#{texto}!!!!"
+  end
+end
+
 p1 = Pessoa.new;
 puts p1.falar
 
 puts Pessoa.gritar("Hello")
+
+puts Pessoal.gritar("Hello!!!!!");
